@@ -22,4 +22,4 @@ X_test = sc.transform(X_test)
 
 classifier = Sequential()
 classifier.add(Dense(output_dim=16, init='uniform', activation='relu', input_dim=30))
-# classifier.add(Dropout(p=0.1))
+classifier.add(Dropout(p=0.1))
